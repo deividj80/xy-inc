@@ -1,0 +1,12 @@
+CREATE DATABASE db_service_gps;
+
+USE db_service_gps;
+
+CREATE TABLE poi (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  name VARCHAR(150) NOT NULL,
+  `x` INT(20) NOT NULL,
+  `y` INT(20) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
